@@ -1,6 +1,10 @@
 ---
 import type { Post } from "../common/types";
 
+export interface Props {
+  posts: Post[];
+}
+
 const { posts } = Astro.props;
 ---
 
