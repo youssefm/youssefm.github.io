@@ -9,7 +9,7 @@ const publishedOnDateString = publishedOnDate.toLocaleDateString("en-US", {
 });
 ---
 
-<BaseLayout title={frontmatter.title}>
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
   <article>
     <div
       class="grid place-items-center mt-10 xl:pb-6 xl:border-b xl:border-b-neutral-700"

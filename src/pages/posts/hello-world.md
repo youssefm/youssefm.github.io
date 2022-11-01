@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: Hello World
+description: This is a hello world post.
 publishedOn: "2022-10-31"
 ---
 

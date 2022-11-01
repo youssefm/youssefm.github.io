@@ -8,6 +8,9 @@ const posts: Post[] = await Astro.glob("./posts/*.{md,mdx}");
 sortBy(posts, (post) => post.frontmatter.publishedOn);
 ---
 
-<Layout title="Youssef Moussaoui's blog">
+<Layout
+  title="Youssef Moussaoui's blog"
+  description="Long-form thoughts about building software"
+>
   <PostList posts={posts} />
 </Layout>
