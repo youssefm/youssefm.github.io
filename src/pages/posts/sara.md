@@ -14,7 +14,7 @@ These are my favorite things about her:
 - She has a great smile
 - She has really interesting things to say
 
-This is [the site](https://www.limitedgrades.com/sara) I made for her! Inline code `angular js`.
+This is [the site](https://www.limitedgrades.com/sara) I made for her!
 
 Here is a thing she said once:
 
