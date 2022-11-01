@@ -14,7 +14,7 @@ These are my favorite things about her:
 - She has a great smile
 - She has really interesting things to say
 
-This is a link to [my Sara site](https://www.limitedgrades.com/sara).
+This is [the site](https://www.limitedgrades.com/sara) I made for her!
 
 ```python
 def say_hi_to_sara():
