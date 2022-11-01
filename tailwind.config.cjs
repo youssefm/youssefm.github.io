@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      lineHeight: {
+        14: "3.5rem",
+      },
       typography: {
         DEFAULT: {
           css: {
