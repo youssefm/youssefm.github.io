@@ -18,6 +18,10 @@ module.exports = {
                 color: colors.amber["600"],
               },
             },
+            li: {
+              marginTop: 0,
+              marginBottom: 0,
+            },
           },
         },
       },
