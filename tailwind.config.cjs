@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -8,6 +9,17 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              "&:hover": {
+                color: colors.amber["600"],
+              },
+            },
+          },
+        },
       },
     },
   },
