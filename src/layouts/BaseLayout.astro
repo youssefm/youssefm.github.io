@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <title>{title}</title>
     <meta name="theme-color" content="#171717" />
@@ -25,7 +25,7 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
     />
   </head>
-  <body class="dark:bg-neutral-900 dark:text-white">
+  <body class="bg-neutral-900 text-white">
     <Container>
       <div class="flex flex-col justify-between h-screen">
         <Header />
