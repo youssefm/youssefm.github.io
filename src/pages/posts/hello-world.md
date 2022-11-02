@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: Hello World
-description: This is a hello world post.
+description: A story about saying hello to the world, being open to new ideas, and communicating them in a friendly and non-threatening way
 publishedOn: "2022-10-31"
 ---
 

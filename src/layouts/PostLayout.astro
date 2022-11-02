@@ -1,12 +1,8 @@
 ---
+import { formatPublishedOn } from "../lib/util";
 import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
 
-const publishedOnDate = new Date(frontmatter.publishedOn);
-const publishedOnDateString = publishedOnDate.toLocaleDateString("en-US", {
-  month: "long",
-  year: "numeric",
-});
+const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title} description={frontmatter.description}>
@@ -16,7 +12,7 @@ const publishedOnDateString = publishedOnDate.toLocaleDateString("en-US", {
     >
       <div class="space-y-1 text-center max-w-prose">
         <div class="text-neutral-400">
-          {publishedOnDateString}
+          {formatPublishedOn(frontmatter.publishedOn)}
         </div>
         <h1
           class="text-3xl font-extrabold tracking-tight text-amber-600 sm:text-5xl sm:leading-14"

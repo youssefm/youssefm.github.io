@@ -5,7 +5,7 @@ import Layout from "../layouts/BaseLayout.astro";
 import PostList from "../components/PostList.astro";
 
 const posts: Post[] = await Astro.glob("./posts/*.{md,mdx}");
-sortBy(posts, (post) => post.frontmatter.publishedOn);
+sortBy(posts, (post) => post.frontmatter.publishedOn, true);
 ---
 
 <Layout

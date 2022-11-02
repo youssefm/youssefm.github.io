@@ -20,3 +20,11 @@ export const sortBy = <T>(
   array.sort(createComparer(getKey, descending));
   return array;
 };
+
+export const formatPublishedOn = (publishedOn: string) => {
+  const publishedOnDate = new Date(publishedOn);
+  return publishedOnDate.toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
+};

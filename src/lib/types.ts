@@ -1,5 +1,6 @@
 export interface PostFrontmatter {
   title: string;
+  description: string;
   publishedOn: string;
 }
 
