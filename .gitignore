@@ -4,9 +4,9 @@ dist/
 # dependencies
 node_modules/
 
-# environment variables
-.env
-.env.production
+# local environment variables
+.env.local
+.env.*.local
 
 # macOS-specific files
 .DS_Store
