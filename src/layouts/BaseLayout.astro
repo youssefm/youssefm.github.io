@@ -7,6 +7,11 @@ export interface Props {
   description: string;
 }
 const { title, description } = Astro.props;
+
+const UMAMI_SITE_ID = import.meta.env.UMAMI_SITE_ID;
+const UMAMI_HOST_URL = import.meta.env.UMAMI_HOST_URL;
+const ANALYTICS_ENABLED =
+  UMAMI_SITE_ID !== undefined && UMAMI_HOST_URL !== undefined;
 ---
 
 <!DOCTYPE html>
@@ -80,6 +85,17 @@ const { title, description } = Astro.props;
           U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
+    {
+      ANALYTICS_ENABLED && (
+        <script
+          src="/u.js"
+          data-website-id={UMAMI_SITE_ID}
+          data-host-url={UMAMI_HOST_URL}
+          async
+          defer
+        />
+      )
+    }
   </head>
   <body class="bg-neutral-900 text-neutral-100">
     <Container>
