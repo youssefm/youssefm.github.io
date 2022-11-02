@@ -1,6 +1,6 @@
 ---
 import type { Post } from "../lib/types";
-import { formatPublishedOn, stripExtension } from "../lib/util";
+import { formatPublishedOn, stripSuffix } from "../lib/util";
 
 export interface Props {
   post: Post;
@@ -8,7 +8,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const postUrl = stripExtension(post.url);
+const postUrl = stripSuffix(post.url, ".html");
 ---
 
 <li class="py-8 sm:py-12 space-y-6 border-t border-neutral-700">
