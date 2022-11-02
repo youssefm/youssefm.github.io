@@ -24,7 +24,7 @@ export const sortBy = <T>(
 export const formatPublishedOn = (publishedOn: string) => {
   const publishedOnDate = new Date(publishedOn);
   return publishedOnDate.toLocaleDateString("en-US", {
-    month: "long",
-    year: "numeric",
+    dateStyle: "long",
+    timeZone: "UTC",
   });
 };
