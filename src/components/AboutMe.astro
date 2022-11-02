@@ -2,13 +2,25 @@
 import { Image } from "@astrojs/image/components";
 ---
 
-<div class="pt-6 pb-8">
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center pt-4 pb-12">
   <Image
     src="/me.jpg"
     alt="Youssef Moussaoui"
-    width="192"
-    height="192"
+    width="128"
+    height="128"
     format="webp"
     class="rounded-full mx-auto"
   />
+  <div class="prose prose-invert text-neutral-300 sm:col-span-3">
+    <p>
+      Hi, I'm Youssef and I'm a software engineer living in the SF bay area.
+      I've previously worked at <a
+        href="https://www.microsoft.com"
+        target="_blank">Microsoft</a
+      >, <a href="https://www.palantir.com" target="_blank">Palantir</a>, and <a
+        href="https://www.color.com"
+        target="_blank">Color</a
+      >. These are the long-form chronicles of my adventures building software.
+    </p>
+  </div>
 </div>
