@@ -1,16 +1,35 @@
 ---
 import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import FindMeIcon from "./FindMeIcon.astro";
 ---
 
 <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center pt-4 pb-8">
-  <Image
-    src="/me.jpg"
-    alt="Youssef Moussaoui"
-    width="128"
-    height="128"
-    format="webp"
-    class="rounded-full mx-auto"
-  />
+  <div class="mx-auto">
+    <Image
+      src="/me.jpg"
+      alt="Youssef Moussaoui"
+      width="128"
+      height="128"
+      format="webp"
+      class="rounded-full"
+    />
+    <div class="flex mt-4 gap-3 justify-center">
+      <FindMeIcon name="akar-icons:envelope" url="mailto:yms@outlook.com" />
+      <FindMeIcon
+        name="akar-icons:github-fill"
+        url="https://github.com/youssefm"
+      />
+      <FindMeIcon
+        name="akar-icons:linkedin-fill"
+        url="https://www.linkedin.com/in/youssef-moussaoui-b81b275/"
+      />
+      <FindMeIcon
+        name="akar-icons:twitter-fill"
+        url="https://twitter.com/youssefmss"
+      />
+    </div>
+  </div>
   <div class="prose prose-invert text-neutral-300 text-lg sm:col-span-3">
     <p>
       Hi, I'm Youssef and I'm a software engineer living in the SF bay area.
